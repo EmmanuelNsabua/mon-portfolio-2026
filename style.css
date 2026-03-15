@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    color: #603ae7;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar h2 a {
+    text-decoration: none;
+    color: #603ae7;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.nav-links ul li .active {
+    color: #603ae7;
+}
+
+
+.nav-links ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 2px;
+    background-color: #603ae7;
+    transition: width 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links ul li .active::after {
+    width: 100%;
+}
+
+.nav-links ul li a:hover {
+    color: #603ae7
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    background-color: #fff;
+}
+
+.container {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero .col-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero .col-left h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #603ae7;
+}
+
+.hero .col-left p {
+    font-size: 18px;
+    color: #696969;
+    line-height: 1.5;
+}
+
+.hero .col-left .btn {
+    background-color: #603ae7;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .col-left .btn:hover {
+    background-color: #4d28b2;
+}
+
+.hero .col-right {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #603ae7;
+}
+
+.hero .col-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 194px 0 194px;
+}
+
+.about div p {
+    font-size: 18px;
+    color: #696969;
+    line-height: 1.5;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #603ae7;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 30px auto;
+    border-radius: 2px;
+    background-color: #603ae7;
+}
+
+.skills {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skills table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.skills thead th {
+    background-color: #603ae7;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 18px 25px;
+    text-align: left;
+}
+
+.skills tbody td {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    font-size: 13px;
+    color: #444;
+}
+
+footer {
+    background-color: #603ae7;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
