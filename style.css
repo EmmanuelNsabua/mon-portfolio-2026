@@ -77,10 +77,6 @@ a {
     width: 100%;
 }
 
-main {
-    background-color: #fff;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -102,7 +98,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .hero .col-left h1 {
@@ -119,12 +115,12 @@ main {
 
 .hero .col-left .btn {
     background-color: #603ae7;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     border: none;
-    padding: 14px 28px;
+    padding: 16px 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
